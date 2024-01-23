@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Седона - город мечты</title>
   </head>
-  <body>
+  <body style="background-color: gray">
     <header>
       <nav>
         <a>
@@ -36,11 +36,19 @@
       <h1>Седона</h1>
       <div>
         <img
+          src="images/welcome.svg"
+          width="400"
+          height="350"
+          alt="Добро пожаловать в великолепную Седону"
+        />
+        <img
           src="images/main-page/back-sedona.jpg"
-          width=""
-          height=""
+          width="760"
+          height="320"
           alt="Седона с птичьего полёта"
         />
+        <img src="images/main-page/divider.svg" width="760" height="60"
+        alt="Белый разделитель для фона"
       </div>
       <h2>Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
@@ -121,8 +129,44 @@
           предложения гостиниц в Седоне
         </p>
         <button type="button">Поиск гостиницы в Седоне</button>
-        <!--Здесь будет форма-->
-        <img src="#" width="" height="" alt="Карта города" />
+        <!--Форма поиска-->
+        <form method="post" action="#">
+          <p>
+            <label for="intro-date">Дата заезда:</label>
+            <input
+              type="date"
+              name="date-in"
+              id="intro-date"
+              placeholder="24 апреля 2017"
+            />
+          </p>
+          <p>
+            <label for="outro-date">Дата выезда:</label>
+            <input
+              type="date"
+              name="date-out"
+              id="outro-date"
+              placeholder="4 июля 2017"
+            />
+          </p>
+          <p>
+            <label>
+              <input type="number" min="0" max="100" name="adult" />Взрослые:
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="number" min="0" max="100" name="kids" />Дети:
+            </label>
+          </p>
+          <button type="submit">Найти</button>
+        </form>
+        <img
+          src="images/main-page/map.jpg"
+          width="760"
+          height="420"
+          alt="Карта города"
+        />
       </section>
       <footer>
         <h2>
