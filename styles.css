@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  color: #000000;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+  background-image: url("images/main-page/back-sedona.jpg");
+  background-position: top center;
+  background-size: 1200px 720px;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  width: 400px;
+  height: 60px;
+  font: inherit;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: #81b3d2;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #669ec0;
+}
+
+.button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-button {
+  width: 570px;
+  height: 88px;
+
+  background-color: #766357;
+}
+
+.form-button:hover,
+.form-button:focus {
+  background-color: #604e43;
+}
+
+.form-button:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.calendar {
+  width: 40px;
+  height: 40px;
+  border: none;
+
+  background-image: url(images/date.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.minus-button,
+.plus-button {
+  width: 40px;
+  height: 40px;
+
+  font-weight: 700;
+  color: #a9a9a9;
+
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.minus-button:hover,
+.plus-button:hover {
+  color: #000000;
+}
+
+.minus-button:active,
+.plus-button:active {
+  color: #81b3d2;
+}
+
+.main-logo-container {
+  background-image: url("images/main-page/divider.svg");
+  background-position: bottom;
+  background-size: 1200px 60px;
+  background-repeat: no-repeat;
+}
+
+.main-navigation {
+  background-color: #ffffff;
+}
+
+.main-navigation ul {
+  list-style: none;
+}
+
+.navigation-list a {
+  font-weight: 700;
+
+  color: #000000;
+}
+
+.navigation-list a:hover {
+  color: #81b3d2;
+}
+
+.navigation-list a:focus {
+  color: #766357;
+}
+
+.navigation-list a:active {
+  color: #b2b2b2;
+}
+
+.advatanges {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.advatanges ul {
+  list-style: none;
+}
+
+.advatanges-list-item:first-child,
+.advatanges-list-item:nth-child(2) {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.advatanges-list-item:nth-child(3),
+.advatanges-list-item:nth-child(4),
+.advatanges-list-item:nth-child(5) {
+  background-color: #eeeeee;
+}
+
+.contacts {
+  background-color: #ffffff;
+  /*background-image: url("images/main-page/map.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;*/
+}
+
+.contacts h2 {
+  padding-top: 24px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.contacts .button {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.modal-search {
+  font: inherit;
+  font-weight: 700;
+}
+
+.modal-search input {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 38px;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+input::placeholder {
+  color: #000000;
+}
+
+.modal-search input:hover {
+  background-color: #ebebeb;
+}
+
+.modal-search input:focus {
+  background-color: transparent;
+  outline: none;
+  border: 2px solid;
+  border-color: #e5e5e5;
+}
+
+.person-search p {
+  display: inline-block;
+  width: 38px;
+  line-height: 40px;
+
+  background-color: #f2f2f2;
+}
+
+.main-footer {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.main-footer p {
+  font-weight: bold;
+}
+
+.footer-social-item {
+  width: 46px;
+  height: 48px;
+
+  background-color: #81b3d2;
+}
+
+.footer-product {
+  color: #000000;
+}

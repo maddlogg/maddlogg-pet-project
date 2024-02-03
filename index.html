@@ -4,11 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Седона - город мечты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="normalize.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
   </head>
-  <body style="background-color: gray">
-    <header>
-      <nav>
-        <a>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
           <img
             src="images/logo-desktop.svg"
             width="145"
@@ -16,7 +24,7 @@
             alt="Логотип города"
           />
         </a>
-        <ul>
+        <ul class="navigation-list">
           <li>
             <a href="information.html">Информация</a>
           </li>
@@ -33,38 +41,29 @@
       </nav>
     </header>
     <main>
-      <h1>Седона</h1>
-      <div>
+      <div class="main-logo-container">
         <img
           src="images/welcome.svg"
-          width="400"
-          height="350"
+          width="459"
+          height="353"
           alt="Добро пожаловать в великолепную Седону"
         />
-        <img
-          src="images/main-page/back-sedona.jpg"
-          width="760"
-          height="320"
-          alt="Седона с птичьего полёта"
-        />
-        <img src="images/main-page/divider.svg" width="760" height="60"
-        alt="Белый разделитель для фона"
       </div>
-      <h2>Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
-      <section>
-        <h2>Причины</h2>
-        <ol>
-          <li>
+      <section class="advatanges">
+        <h2>Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
+        <ul class="advatanges-list">
+          <li class="advatanges-list-item">
             <h3>Настоящий городок</h3>
+            <p>—№1—</p>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
             <img
               src="images/main-page/photo-1.jpg"
-              width=""
-              height=""
+              width="800px"
+              height="258px"
               alt="Архитектура города"
             />
-            <ul>
+            <ul class="advatangess">
               <li>
                 <h3>Жильё</h3>
                 <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -97,69 +96,82 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="advatanges-list-item">
             <h3>Там есть мост дьявола</h3>
+            <p>—№2—</p>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             <img
               src="images/main-page/photo-2.jpg"
-              width=""
-              height=""
+              width="800px"
+              height="258px"
               alt="Рельеф местности"
             />
           </li>
-          <li>
+          <li class="advatanges-list-item">
             <h3>Небольшая площадь</h3>
+            <p>—№3—</p>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
-          <li>
+          <li class="advatanges-list-item">
             <h3>Красивая дорога</h3>
+            <p>—№4—</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li>
+          <li class="advatanges-list-item">
             <h3>Мало туристов</h3>
+            <p>—№5—</p>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-        </ol>
+        </ul>
       </section>
-
-      <section>
+      <section class="contacts">
         <h2>Заинтересовались?</h2>
         <p>
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-          предложения гостиниц в Седоне
+          Укажите предполагаемые даты поездки,<br />
+          и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <button type="button">Поиск гостиницы в Седоне</button>
+        <button class="button form-button" type="button">
+          Поиск гостиницы в Седоне
+        </button>
         <!--Форма поиска-->
-        <form method="post" action="#">
-          <p>
-            <label for="intro-date">Дата заезда:</label>
-            <input
-              type="date"
-              name="date-in"
-              id="intro-date"
-              placeholder="24 апреля 2017"
-            />
-          </p>
-          <p>
-            <label for="outro-date">Дата выезда:</label>
-            <input
-              type="date"
-              name="date-out"
-              id="outro-date"
-              placeholder="4 июля 2017"
-            />
-          </p>
-          <p>
-            <label>
-              <input type="number" min="0" max="100" name="adult" />Взрослые:
-            </label>
-          </p>
-          <p>
-            <label>
-              <input type="number" min="0" max="100" name="kids" />Дети:
-            </label>
-          </p>
-          <button type="submit">Найти</button>
+        <form class="modal-search" method="post" action="#">
+          <div class="date-search">
+            <p>
+              <label for="intro-date">Дата заезда:</label>
+              <input
+                type="text"
+                name="date-in"
+                id="intro-date"
+                placeholder="24 апреля 2017"
+              />
+              <button class="calendar"></button>
+            </p>
+            <p>
+              <label for="outro-date">Дата выезда:</label>
+              <input
+                type="text"
+                name="date-out"
+                id="outro-date"
+                placeholder="4 июля 2017"
+              />
+              <button class="calendar"></button>
+            </p>
+          </div>
+          <div class="person-search">
+            <div>
+              <label for="adult">Взрослые:</label>
+              <button class="minus-button">-</button>
+              <p>2</p>
+              <button class="plus-button">+</button>
+            </div>
+            <div>
+              <label for="kids">Дети:</label>
+              <button class="minus-button">-</button>
+              <p>0</p>
+              <button class="plus-button">+</button>
+            </div>
+          </div>
+          <button class="button" type="submit">Найти</button>
         </form>
         <img
           src="images/main-page/map.jpg"
@@ -168,25 +180,31 @@
           alt="Карта города"
         />
       </section>
-      <footer>
-        <h2>
+      <footer class="main-footer">
+        <p>
           #VISITSEDONA<br />
           ТЕЛ: +7(495) 666-02-66
-        </h2>
-        <div>
+        </p>
+        <div class="footer-social">
           <ul>
-            <li>
-              <a href="#">Твиттер</a>
+            <li class="footer-social-item">
+              <a href="#"
+                ><img src="images/svg/twitter.svg" alt="Ссылка Твиттер"
+              /></a>
             </li>
-            <li>
-              <a href="#">Фейсбук</a>
+            <li class="footer-social-item">
+              <a href="#"
+                ><img src="images/svg/fb-icon.svg" alt="Ссылка Фейсбук"
+              /></a>
             </li>
-            <li>
-              <a href="#">Ютуб</a>
+            <li class="footer-social-item">
+              <a href="#"
+                ><img src="images/svg/youtube.svg" alt="Ссылка Ютуб"
+              /></a>
             </li>
           </ul>
         </div>
-        <a href="#"
+        <a class="footer-product" href="#"
           >Website by
           <img
             src="images/svg/logo-htmlacademy.svg"
